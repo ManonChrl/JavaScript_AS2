@@ -1,0 +1,152 @@
+@-webkit-keyframes basic {
+	0% {-webkit-transform:translate(-600px);}
+	25% { -webkit-transform:translate(-400px); }
+	75% { -webkit-transform:translate(-200px);}
+	100% { -webkit-transform:translate(0px); }
+}
+@keyframes basic {
+	0% {transform:translate(-600px);}
+	25% { transform:translate(-400px); }
+	75% { transform:translate(-200px);}
+	100% { transform:translate(0px); }
+}
+#videoElement {
+	width: 75%;
+	height: auto;
+}
+
+.fillBrowser{
+	position: fixed; right: 0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: auto; height: auto; z-index: -100;
+
+}
+
+.playFullscreen#play {
+	position: absolute;
+	top: 750px;
+	left: 500px;
+	width: 3%;
+	height: auto;
+}
+
+.pauseFullscreen#pause {
+	position: absolute;
+	top: 750px;
+	left: 530px;
+	width: 3%;
+	height: auto;
+}
+
+.progressBarFullscreen#progressBar {
+	position: absolute;
+	top: 760px;
+	left: 580px;
+	width: 550px;
+   	height: 10px;
+   	background-color: black;
+}
+
+.progressTimeFullscreen#progressTime {
+	position: absolute;
+  	top: 750px;
+  	left: 1150px;
+  	color:#666666;
+  	background-color: black;
+}
+
+#defaultMode {
+	position: absolute;
+	top: 750px;
+	left:1250px;
+	width:3%;
+	height:auto;
+}
+
+.videoDescriptionFullscreen#videoDescription {
+	position: absolute;
+	top:790px;
+	left:0px;
+	right:0px;
+	text-align: center;
+	font-weight: bold;
+	background-color: white;
+	-webkit-animation:basic 5s 1 linear;
+	animation:basic 5s 1 linear;
+}
+
+#alertFS {
+	position: absolute;
+	top:30%;
+	left:40%;
+	background-color: white;
+
+}
+
+#progressTime {
+	position: absolute;
+  	top: 93%;
+  	left: 63%;
+  	font-size: 11px;
+  	color:#666666;
+  	background-color: black;
+}
+#progressBar
+{
+   position: absolute;
+   top: 94%;
+   left: 32%;
+   width: 30%;
+   height: 10px;
+   background-color: black;
+}
+#timeBar
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 100%;
+   background-color: #FF8484;
+}
+#videoDescription {
+	position: absolute;
+	top:80%;
+	left:25%;
+	right:50%;
+	text-align: center;
+	background-color: white;
+	-webkit-animation:basic 5s 1 linear;
+	animation:basic 5s 1 linear;
+}
+
+#play {
+	position: absolute;
+	top: 93%;
+	left: 25%;
+	width: 3%;
+	height: auto;
+}
+
+#pause {
+	position: absolute;
+	top: 93%;
+	left: 28%;
+	width: 3%;
+	height: auto;
+}
+
+#fullScreen {
+	position: absolute;
+	top: 93%;
+	left:71%;
+	width:3%;
+	height:auto;
+}
+
+.thumbnail {
+    float: left;
+    width: 110px;
+    height: 90px;
+    margin: 5px;
+}
